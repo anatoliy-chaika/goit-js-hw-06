@@ -9,6 +9,7 @@ function handleSubmit(event) {
   } = event.currentTarget;
   if (!email.value || !password.value) {
     alert("You should fill both fields!");
+    return;
   }
   const dataArray = {};
   dataArray.email = `${email.value}`;
