@@ -7,6 +7,7 @@ inputText.addEventListener("blur", resultOfBlur);
 function resultOfBlur(event) {
   const lengthValue = event.currentTarget.value.length;
   if (lengthValue !== valueOfAtribute) {
+    inputText.classList.remove("valid");
     return inputText.classList.add("invalid");
   }
   inputText.classList.remove("invalid");
